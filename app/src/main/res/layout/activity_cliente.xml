@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCliente"
+    android:background="@drawable/back3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="REGISTRA UN NUEVO CLIENTE"
+        android:textColor="@android:color/black"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        app:fontFamily="casual" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="4.25"
+            android:orientation="vertical">
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Número de Documento (RUC, DNI, etc)"
+                    android:textColor="@android:color/black"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    app:fontFamily="casual"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo del Documento"
+                    android:textColor="@android:color/black"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    app:fontFamily="casual" />
+              <!--  <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+
+
+                    <EditText
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal"
+                    android:ems="12"
+                    android:inputType="textPersonName" />
+
+
+
+
+                <Spinner
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal" />        -->
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Razón Social (Nombre Completo)"
+                    android:textColor="@android:color/black"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    app:fontFamily="casual" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dirección Fiscal"
+                    android:textColor="@android:color/black"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    app:fontFamily="casual" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email (Opcional)"
+                    android:textColor="@android:color/black"
+                    style="@android:style/TextAppearance.DeviceDefault.Medium"
+                    app:fontFamily="casual" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:layout_weight="4.25"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+
+
+                    android:id="@+id/txtNumeroCliente"
+                    android:layout_width="match_parent"
+
+
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+
+                <Spinner
+
+
+                    android:id="@+id/cboTipoCliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill_horizontal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+
+
+                    android:id="@+id/txtNombreCliente"
+                    android:layout_width="match_parent"
+
+
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:hint="(Solo letras, numeros, puntos y comas)"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+
+
+                    android:id="@+id/txtDireccionCliente"
+                    android:layout_width="match_parent"
+
+
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:hint="(Solo letras, numeros, puntos y comas)"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:orientation="horizontal">
+
+
+                <EditText
+
+
+                    android:id="@+id/txtEmailCliente"
+                    android:layout_width="match_parent"
+                    android:maxLength="249"
+
+
+                    android:layout_height="wrap_content"
+                    android:ems="12"
+                    android:inputType="textPersonName" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <Button
+
+
+            android:id="@+id/btnRegistrarCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#f4f4f4"
+            android:text="REGISTRAR CLIENTE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

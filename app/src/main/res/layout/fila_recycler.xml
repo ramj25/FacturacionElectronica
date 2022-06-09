@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@android:color/darker_gray"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Nombre"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="casual" />
+
+        <EditText
+
+            android:id="@+id/txtP1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="12"
+            android:inputType="text" />
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Precio"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="casual" />
+
+        <EditText
+
+            android:id="@+id/txtP2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="12"
+            android:inputType="text" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Cantidad"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="casual" />
+
+        <EditText
+
+            android:id="@+id/txtP3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="12"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="Tipo Producto"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="casual" />
+
+
+        <Spinner
+            android:id="@+id/spnP1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Tipo IGV"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="casual" />
+
+        <Spinner
+            android:id="@+id/spnP2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="SubTotal"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="casual" />
+
+        <EditText
+
+            android:id="@+id/txtP4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="12"
+            android:enabled="false"
+            android:inputType="text" />
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="casual" />
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Total"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="casual" />
+
+        <EditText
+
+            android:id="@+id/txtP5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="12"
+            android:enabled="false"
+            android:inputType="text" />
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:fontFamily="casual" />
+
+        <Button
+            android:id="@+id/btnP1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Eliminar" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="CREA UN COMPROBANTE ELECTRÓNICO"
+        android:textColor="@android:color/black"
+        style="@android:style/TextAppearance.DeviceDefault.Medium"
+        app:fontFamily="casual" />
+    
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Cliente"
+                android:textColor="@android:color/black"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                app:fontFamily="casual" />
+
+            <Spinner
+                android:id="@+id/cboCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1">
+
+            </Spinner>
+
+            <Button
+
+                android:id="@+id/btnCliente"
+
+                style="@android:style/Widget.DeviceDefault.Light.Button"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+
+
+                android:background="#f4f4f4"
+                android:text="¿Nuevo Cliente?"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Documento"
+                android:textColor="@android:color/black"
+
+                app:fontFamily="casual"
+
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <Spinner
+                android:id="@+id/cboTipoDocumento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serie"
+                android:textColor="@android:color/black"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                app:fontFamily="casual" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <Spinner
+
+                android:id="@+id/cboSerie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero Referencial"
+                android:textColor="@android:color/black"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                app:fontFamily="casual" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <EditText
+
+                android:id="@+id/txtNumeroReferencial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:ems="12"
+                android:inputType="numberDecimal" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Operación"
+                android:textColor="@android:color/black"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                app:fontFamily="casual" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <Spinner
+
+                android:id="@+id/cboTipoOperacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Moneda"
+                android:textColor="@android:color/black"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                app:fontFamily="casual" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <Spinner
+
+                android:id="@+id/cboMoneda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal" />
+        </LinearLayout>
+
+
+        <!--
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Cambio"
+                android:textColor="@android:color/black"
+                android:textSize="25sp"
+                app:fontFamily="casual"
+                />
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <EditText
+
+                android:id="@+id/txtTipoCambio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal"
+                android:ems="12"
+                android:hint="Opcional - Incluir 3 decimales"
+                android:inputType="numberDecimal" />
+
+
+        </LinearLayout>
+
+-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Detracción?"
+                android:textColor="@android:color/black"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                app:fontFamily="casual" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <Spinner
+
+                android:id="@+id/cboDetraccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Notas"
+                android:textColor="@android:color/black"
+                style="@android:style/TextAppearance.DeviceDefault.Medium"
+                app:fontFamily="casual" />
+
+            <TextView
+
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <EditText
+
+                android:id="@+id/txtNotas"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+
+
+                android:gravity="start"
+                android:hint="Opcional - No usar caracteres especiales \n(Solo letras, numeros, puntos y comas)"
+                android:inputType="textMultiLine"
+                android:lines="10"
+                android:scrollHorizontally="false" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:orientation="horizontal">
+
+
+                <Button
+
+                    android:id="@+id/btnProductos"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginRight="15dp"
+                    android:background="#f0f0f0"
+
+
+                    android:text="Añadir Producto al Comprobante"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rec1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+            </android.support.v7.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Gravado"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Gratuito" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Exonerado" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Inafecto" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="IGV"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Total Final"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:id="@+id/txtGravado"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="0.00"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+
+                        android:id="@+id/txtGratuito"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="0.00" />
+
+                    <TextView
+
+                        android:id="@+id/txtExonerado"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="0.00" />
+
+                    <TextView
+
+                        android:id="@+id/txtInafecto"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="0.00" />
+
+                    <TextView
+
+                        android:id="@+id/txtIGV"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="0.00"
+                        android:textColor="@android:color/black" />
+
+                    <TextView
+
+                        android:id="@+id/txtFinal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="0.00"
+                        android:textColor="@android:color/black" />
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+      <!--      <view class="android.support.v7.app.AlertController$RecycleListView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </view>
+
+-->
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.25"
+        android:orientation="horizontal">
+
+
+        <Button
+
+
+            android:id="@+id/btnCrear"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#e4e4e4"
+            android:text="CREAR COMPROBANTE"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>
